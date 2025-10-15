@@ -51,10 +51,10 @@ function atualizaTabela(){
 }
 
 function atulizaMediaFinal(){
-    const mediaFInal = calculaMediaFinal();
+    const mediaFinal = calculaMediaFinal();
 
-    document.getElementById('media-final-valor').innerHTML = mediaFInal;
-    document.getElementById('media-final-resultado').innerHTML = mediaFInal >= notaMinima ? spanAprovado : spanReprovado;
+    document.getElementById('media-final-valor').innerHTML = mediaFinal.toFixed(2);
+    document.getElementById('media-final-resultado').innerHTML = mediaFinal >= notaMinima ? spanAprovado : spanReprovado;
 
 }
 
